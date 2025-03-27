@@ -1,0 +1,9 @@
+# ================================================
+# File System Configuration
+# ================================================
+fileSystem:
+
+  hashAlgorithms: ${FS_HASH_ALGOS | sha256}
+
+  # Sets the provider to use for the file system backend. Default: os
+  provider: ${FS_PROVIDER | }
