@@ -30,7 +30,7 @@ Reusable file system components for Go.
 
 [source%nowrap,bash]
 ----
-❯ go get -u github.com/transientvariable/fs
+❯ go get -u github.com/transientvariable/fs-go
 ----
 
 == License

@@ -6,8 +6,8 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/transientvariable/collection"
-	"github.com/transientvariable/fs"
+	"github.com/transientvariable/collection-go"
+	"github.com/transientvariable/fs-go"
 )
 
 type dirIterator struct {

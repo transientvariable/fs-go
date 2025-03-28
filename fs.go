@@ -6,8 +6,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/transientvariable/collection"
-	"github.com/transientvariable/log"
+	"github.com/transientvariable/collection-go"
+	"github.com/transientvariable/log-go"
 
 	gofs "io/fs"
 )

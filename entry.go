@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/transientvariable/sup"
+	"github.com/transientvariable/support-go"
 
 	json "github.com/json-iterator/go"
 	gofs "io/fs"
@@ -177,7 +177,7 @@ func (e *Entry) String() string {
 			s["attributes"] = attrs
 		}
 	}
-	return string(sup.ToJSONFormatted(s))
+	return string(support.ToJSONFormatted(s))
 }
 
 func validPath(p string, v func(string) bool) error {

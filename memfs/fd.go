@@ -4,8 +4,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/transientvariable/fs"
-	"github.com/transientvariable/log"
+	"github.com/transientvariable/fs-go"
+	"github.com/transientvariable/log-go"
 
 	gofs "io/fs"
 )

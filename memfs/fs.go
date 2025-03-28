@@ -3,7 +3,6 @@ package memfs
 import (
 	"errors"
 	"fmt"
-	"github.com/transientvariable/collection"
 	"io"
 	"os"
 	"path/filepath"
@@ -11,10 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/transientvariable/collection/trie"
-	"github.com/transientvariable/fs"
-	"github.com/transientvariable/log"
-	"github.com/transientvariable/sup"
+	"github.com/transientvariable/collection-go"
+	"github.com/transientvariable/collection-go/trie"
+	"github.com/transientvariable/fs-go"
+	"github.com/transientvariable/log-go"
+	"github.com/transientvariable/support-go"
 
 	gofs "io/fs"
 )
@@ -284,7 +284,7 @@ func (m *MemFS) String() string {
 		entries = append(entries, err.Error())
 	}
 	s["list"] = entries
-	return string(sup.ToJSONFormatted(s))
+	return string(support.ToJSONFormatted(s))
 }
 
 func (m *MemFS) open(op string, name string, flag int, mode gofs.FileMode) (*File, error) {

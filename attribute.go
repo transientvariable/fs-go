@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/transientvariable/sup"
+	"github.com/transientvariable/support-go"
 
 	json "github.com/json-iterator/go"
 	gofs "io/fs"
@@ -130,7 +130,7 @@ func (a *Attribute) String() string {
 	s["owner"] = a.Owner()
 	s["size"] = a.Size()
 	s["uid"] = a.UID()
-	return string(sup.ToJSONFormatted(s))
+	return string(support.ToJSONFormatted(s))
 }
 
 // WithCtime ...

@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/transientvariable/fs"
+	"github.com/transientvariable/fs-go"
 
 	gofs "io/fs"
 	gohttp "net/http"
