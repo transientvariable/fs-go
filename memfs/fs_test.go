@@ -16,12 +16,10 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	gofs "io/fs"
-
-	_ "github.com/transientvariable/support/testing"
 )
 
 const (
-	testDataDir = "testing/data"
+	testDataDir = "../testdata"
 )
 
 // MemFSTestSuite ...
@@ -37,6 +35,10 @@ func NewMemFSTestSuite() *MemFSTestSuite {
 }
 
 func (t *MemFSTestSuite) SetupTest() {
+	if err := log.SetDefault(log.New(log.WithLevel("debug"))); err != nil {
+		t.T().Fatal(err)
+	}
+
 	mfs, err := New()
 	if err != nil {
 		t.T().Fatal(err)
@@ -44,6 +46,8 @@ func (t *MemFSTestSuite) SetupTest() {
 	t.mfs = mfs
 
 	dir, err := os.Getwd()
+	log.Info("")
+
 	if err != nil {
 		t.T().Fatal(err)
 	}
@@ -65,7 +69,7 @@ func (t *MemFSTestSuite) SetupTest() {
 
 			filePath := strings.TrimPrefix(path, dir+"/")
 
-			log.Info("[seaweedfs_test] writing test file",
+			log.Info("[memfs_test] writing test file",
 				log.String("file_path", filePath),
 				log.Int("size", len(b)),
 				log.String("source", path))
