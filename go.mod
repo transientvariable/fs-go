@@ -6,13 +6,15 @@ require (
 	github.com/json-iterator/go v1.1.12
 	github.com/stretchr/testify v1.9.0
 	github.com/transientvariable/collection-go v0.0.0-20250328202838-afe94bec7aa9
-	github.com/transientvariable/log-go v0.0.0-20250328203417-78e4fdd6a836
+	github.com/transientvariable/log-go v0.0.0-20250329033446-0714af4f8d14
+	github.com/transientvariable/schema-go v0.0.0-20250329032724-68a4de9f8e46
 	github.com/transientvariable/support-go v0.0.0-20250328202339-a951ff086c00
 )
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
+	github.com/google/uuid v1.6.0 // indirect
 	github.com/ipfs/go-cid v0.5.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
 	github.com/kr/text v0.2.0 // indirect
@@ -30,11 +32,10 @@ require (
 	github.com/multiformats/go-varint v0.0.7 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/rs/zerolog v1.33.0 // indirect
+	github.com/rs/zerolog v1.34.0 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/timberio/go-datemath v0.1.0 // indirect
-	github.com/transientvariable/config v0.0.0-20250313192512-82b000b70360 // indirect
-	github.com/transientvariable/sup v0.0.0-20250313190857-7a5fb782b3fa // indirect
+	github.com/transientvariable/config-go v0.0.0-20250328202531-b2c2c900313c // indirect
 	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394 // indirect
 	golang.org/x/sys v0.31.0 // indirect
