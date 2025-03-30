@@ -3,7 +3,7 @@ package memfs
 import (
 	"github.com/transientvariable/fs-go"
 	"github.com/transientvariable/log-go"
-	"github.com/transientvariable/support-go"
+	"github.com/transientvariable/anchor"
 
 	gofs "io/fs"
 )

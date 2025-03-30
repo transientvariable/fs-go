@@ -10,7 +10,7 @@ import (
 
 	"github.com/transientvariable/fs-go"
 	"github.com/transientvariable/log-go"
-	"github.com/transientvariable/support-go"
+	"github.com/transientvariable/anchor"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"

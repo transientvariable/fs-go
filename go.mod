@@ -5,10 +5,10 @@ go 1.24.1
 require (
 	github.com/json-iterator/go v1.1.12
 	github.com/stretchr/testify v1.9.0
-	github.com/transientvariable/collection-go v0.0.0-20250328202838-afe94bec7aa9
+	github.com/transientvariable/hold v0.0.0-20250328202838-afe94bec7aa9
 	github.com/transientvariable/log-go v0.0.0-20250329033446-0714af4f8d14
 	github.com/transientvariable/schema-go v0.0.0-20250329032724-68a4de9f8e46
-	github.com/transientvariable/support-go v0.0.0-20250328202339-a951ff086c00
+	github.com/transientvariable/anchor v0.0.0-20250328202339-a951ff086c00
 )
 
 require (

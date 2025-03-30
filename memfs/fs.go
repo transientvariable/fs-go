@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/transientvariable/collection-go"
-	"github.com/transientvariable/collection-go/trie"
+	"github.com/transientvariable/hold"
+	"github.com/transientvariable/hold/trie"
 	"github.com/transientvariable/fs-go"
 	"github.com/transientvariable/log-go"
-	"github.com/transientvariable/support-go"
+	"github.com/transientvariable/anchor"
 
 	gofs "io/fs"
 )
@@ -402,7 +402,7 @@ func create(mfs *MemFS, name string, flag int, mode gofs.FileMode) (*File, error
 func entry(mfs *MemFS, name string) (*fsEntry, error) {
 	e, err := mfs.entries.Entry(name)
 	if err != nil {
-		if errors.Is(err, collection.ErrCollectionEmpty) || errors.Is(err, collection.ErrNotFound) {
+		if errors.Is(err, hold.ErrCollectionEmpty) || errors.Is(err, hold.ErrNotFound) {
 			return nil, gofs.ErrNotExist
 		}
 		return nil, err

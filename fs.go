@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/transientvariable/collection-go"
+	"github.com/transientvariable/hold"
 	"github.com/transientvariable/log-go"
 
 	gofs "io/fs"
@@ -47,7 +47,7 @@ const (
 
 // DirIterator defines the behavior for iterating over entries in a directory.
 type DirIterator interface {
-	collection.Iterator[*Entry]
+	hold.Iterator[*Entry]
 
 	// NextN returns a slice containing the next n directory list. Dot list "." are skipped.
 	//

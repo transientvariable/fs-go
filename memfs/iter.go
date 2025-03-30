@@ -6,12 +6,12 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/transientvariable/collection-go"
+	"github.com/transientvariable/hold"
 	"github.com/transientvariable/fs-go"
 )
 
 type dirIterator struct {
-	iter collection.Iterator[string]
+	iter hold.Iterator[string]
 	mfs  *MemFS
 }
 
@@ -37,7 +37,7 @@ func (i *dirIterator) Next() (*fs.Entry, error) {
 
 	v, err := i.iter.Next()
 	if err != nil {
-		if errors.Is(err, collection.ErrNotFound) {
+		if errors.Is(err, hold.ErrNotFound) {
 			return nil, io.EOF
 		}
 		return nil, err
