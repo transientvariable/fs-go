@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/transientvariable/anchor"
+	"github.com/transientvariable/fs-go"
 	"github.com/transientvariable/hold"
 	"github.com/transientvariable/hold/trie"
-	"github.com/transientvariable/fs-go"
 	"github.com/transientvariable/log-go"
-	"github.com/transientvariable/anchor"
 
 	gofs "io/fs"
 )
@@ -284,7 +284,7 @@ func (m *MemFS) String() string {
 		entries = append(entries, err.Error())
 	}
 	s["list"] = entries
-	return string(support.ToJSONFormatted(s))
+	return string(anchor.ToJSONFormatted(s))
 }
 
 func (m *MemFS) open(op string, name string, flag int, mode gofs.FileMode) (*File, error) {

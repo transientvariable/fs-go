@@ -8,9 +8,9 @@ import (
 	"testing"
 	"testing/fstest"
 
+	"github.com/transientvariable/anchor"
 	"github.com/transientvariable/fs-go"
 	"github.com/transientvariable/log-go"
-	"github.com/transientvariable/anchor"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
@@ -91,7 +91,7 @@ func (t *MemFSTestSuite) SetupTest() {
 	}
 	t.filePaths = filePaths
 
-	log.Info(fmt.Sprintf("[memfs_test:setup] file paths:\n%s", support.ToJSONFormatted(t.filePaths)))
+	log.Info(fmt.Sprintf("[memfs_test:setup] file paths:\n%s", anchor.ToJSONFormatted(t.filePaths)))
 }
 
 func TestMemFSTestSuite(t *testing.T) {

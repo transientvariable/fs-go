@@ -177,7 +177,7 @@ func (e *Entry) String() string {
 			s["attributes"] = attrs
 		}
 	}
-	return string(support.ToJSONFormatted(s))
+	return string(anchor.ToJSONFormatted(s))
 }
 
 func validPath(p string, v func(string) bool) error {

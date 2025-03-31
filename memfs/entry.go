@@ -1,9 +1,9 @@
 package memfs
 
 import (
+	"github.com/transientvariable/anchor"
 	"github.com/transientvariable/fs-go"
 	"github.com/transientvariable/log-go"
-	"github.com/transientvariable/anchor"
 
 	gofs "io/fs"
 )
@@ -53,7 +53,7 @@ func (f *fsEntry) String() string {
 		s["entry"] = map[string]any{
 			"attributes": a,
 		}
-		return string(support.ToJSONFormatted(s))
+		return string(anchor.ToJSONFormatted(s))
 	}
 	return ""
 }

@@ -4,11 +4,11 @@ go 1.24.1
 
 require (
 	github.com/json-iterator/go v1.1.12
-	github.com/stretchr/testify v1.9.0
-	github.com/transientvariable/hold v0.0.0-20250328202838-afe94bec7aa9
-	github.com/transientvariable/log-go v0.0.0-20250329033446-0714af4f8d14
+	github.com/stretchr/testify v1.10.0
+	github.com/transientvariable/anchor v0.0.0-20250331021423-92af82ab0491
+	github.com/transientvariable/hold v0.0.0-20250331025322-e77b8baf1e22
+	github.com/transientvariable/log-go v0.0.0-20250331025854-d7b6f485044f
 	github.com/transientvariable/schema-go v0.0.0-20250329032724-68a4de9f8e46
-	github.com/transientvariable/anchor v0.0.0-20250328202339-a951ff086c00
 )
 
 require (
@@ -17,7 +17,6 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/ipfs/go-cid v0.5.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
-	github.com/kr/text v0.2.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/minio/sha256-simd v1.0.1 // indirect
@@ -35,7 +34,8 @@ require (
 	github.com/rs/zerolog v1.34.0 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/timberio/go-datemath v0.1.0 // indirect
-	github.com/transientvariable/config-go v0.0.0-20250328202531-b2c2c900313c // indirect
+	github.com/transientvariable/config-go v0.0.0-20250331030513-ea344f70c2d2 // indirect
+	github.com/transientvariable/support-go v0.0.0-20250328202339-a951ff086c00 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394 // indirect
 	golang.org/x/sys v0.31.0 // indirect

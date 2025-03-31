@@ -130,7 +130,7 @@ func (a *Attribute) String() string {
 	s["owner"] = a.Owner()
 	s["size"] = a.Size()
 	s["uid"] = a.UID()
-	return string(support.ToJSONFormatted(s))
+	return string(anchor.ToJSONFormatted(s))
 }
 
 // WithCtime ...
