@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/transientvariable/schema-go"
+	"github.com/transientvariable/cadre"
 )
 
-// FileMetadata converts a file system entry and produces a schema.File.
-func FileMetadata(fsys FS, entry *Entry) (*schema.File, error) {
+// FileMetadata converts a file system entry and produces a cadre.File.
+func FileMetadata(fsys FS, entry *Entry) (*cadre.File, error) {
 	if fsys == nil {
 		return nil, errors.New("fs: file system is required")
 	}
@@ -24,7 +24,7 @@ func FileMetadata(fsys FS, entry *Entry) (*schema.File, error) {
 	}
 
 	mtime := entry.ModTime()
-	m := &schema.File{
+	m := &cadre.File{
 		Ctime:     &mtime,
 		GID:       itoa(int(entry.Attributes().GID())),
 		Directory: filepath.Join(fsys.PathSeparator(), r, filepath.Dir(entry.Path())),
